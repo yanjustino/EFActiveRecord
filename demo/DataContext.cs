@@ -9,5 +9,11 @@ namespace d2d.Models.repositorios
     public class DataContext: DbContext
     {
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Endereco> Enderecos { get; set; }
+
+        public DataContext()
+        {
+            this.Configuration.AutoDetectChangesEnabled = true;
+        }
     }
 }
