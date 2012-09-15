@@ -16,10 +16,5 @@ namespace d2d.Models
         public virtual ICollection<Cobranca> Cobrancas { get; set; }
 
         public Cliente() : base(new DataContext()) { }
-
-        protected override void Binding()
-        {
-            Attach(this.Endereco);
-        }
     }
 }
