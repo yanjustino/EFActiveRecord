@@ -43,14 +43,21 @@ namespace EFActiveRecord
         /// <summary>
         /// Set data binding model
         /// </summary>
-        protected virtual void Binding() { }
+        private virtual void Binding() 
+		{ 
+            foreach (System.Reflection.PropertyInfo item in this.GetType().GetProperties())
+            {
+                if (item.PropertyType.BaseType.Name.Contains("ActiveRecord"))
+                    Attach(item.GetValue(this, null));
+            }
+		}
 
         /// <summary>
         /// Attach cascaded model 
         /// </summary>
         /// <typeparam name="K"></typeparam>
         /// <param name="attach"></param>
-        protected void Attach(object attach)
+        private void Attach(object attach)
         {
             int id = (int)attach.GetType().GetProperty("Id").GetValue(attach, null);
             var current = Context.Set(attach.GetType()).Find(id);
