@@ -6,3 +6,11 @@ d:\projetos\EFActiveRecord\EFActiveRecord\bin\Debug\EntityFramework.xml
 d:\projetos\EFActiveRecord\EFActiveRecord\obj\Debug\EFActiveRecord.csprojResolveAssemblyReference.cache
 d:\projetos\EFActiveRecord\EFActiveRecord\obj\Debug\EFActiveRecord.dll
 d:\projetos\EFActiveRecord\EFActiveRecord\obj\Debug\EFActiveRecord.pdb
+D:\Projetos\EFActiveRecord\source\EFActiveRecord\obj\Debug\EFActiveRecord.csprojResolveAssemblyReference.cache
+D:\Projetos\EFActiveRecord\source\EFActiveRecord\obj\Debug\EFActiveRecord.dll
+D:\Projetos\EFActiveRecord\source\EFActiveRecord\obj\Debug\EFActiveRecord.pdb
+D:\Projetos\EFActiveRecord\source\EFActiveRecord\bin\Debug\EFActiveRecord.dll.config
+D:\Projetos\EFActiveRecord\source\EFActiveRecord\bin\Debug\EFActiveRecord.dll
+D:\Projetos\EFActiveRecord\source\EFActiveRecord\bin\Debug\EFActiveRecord.pdb
+D:\Projetos\EFActiveRecord\source\EFActiveRecord\bin\Debug\EntityFramework.dll
+D:\Projetos\EFActiveRecord\source\EFActiveRecord\bin\Debug\EntityFramework.xml

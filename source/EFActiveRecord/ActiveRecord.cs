@@ -43,10 +43,13 @@ namespace EFActiveRecord
         /// <summary>
         /// Set data binding model
         /// </summary>
-        private virtual void Binding() 
+        private void Binding() 
 		{ 
             foreach (System.Reflection.PropertyInfo item in this.GetType().GetProperties())
             {
+                if (item.PropertyType.BaseType == null)
+                    continue;
+
                 if (item.PropertyType.BaseType.Name.Contains("ActiveRecord"))
                     Attach(item.GetValue(this, null));
             }
